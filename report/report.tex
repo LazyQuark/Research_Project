@@ -199,6 +199,29 @@ and the log likelihood ratio takes the form
 Maximising $\ln \Lambda(\boldsymbol{\theta})$ (or equivalently $G(\boldsymbol{\theta})$ with proper normalisation) over the parameter space yields both the best matching template and the corresponding parameter estimates, providing a unified treatment of detection and parameter estimation in stationary Gaussian noise.
 
 
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%################################################################################
+
+\subsection{Mock Analysis :}
+
+Here I have taken a signal and embedded into noise with appropriate ampltude  and the noise is generated 
+from psd of the LIGO Detector and from there I assumed this is my data of time series and checked for any potential siganls 
+by using multiple templates with different mass combinations. The highest SNR gives me the closest template that matched with the signal and correspondingly the closest 
+parameters for the signal are obtained from the best template parameters.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.55\textwidth]{../noise_data.png}%
+    \includegraphics[width=0.55\textwidth]{../snr_analysis.png}
+\end{figure}
+
+I have also did some practical coding to get familiar with the analysis of these gravitaional waves using PyCBC package.
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -35,8 +35,8 @@ y1 = P1.max()
 ymax = max(y0, y1)
 
 # Label each curve near its peak
-ax.text(mu0, y0*0.9, r'$P_0(G)$', ha='center', va='bottom')
-ax.text(mu1, y1*0.9, r'$P_1(G)$', ha='center', va='bottom')
+ax.text(mu0, y0*1.05, r'$P_0(G)$', ha='center', va='bottom')
+ax.text(mu1, y1*1.05, r'$P_1(G)$', ha='center', va='bottom')
 
 # Vertical lines at means
 ax.axvline(mu0, color='black', linestyle=':', alpha=0.7)
