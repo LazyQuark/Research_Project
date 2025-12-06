@@ -1,6 +1,7 @@
 \documentclass[a4paper,11pt]{article}
 
-\usepackage[hidelinks]{hyperref}
+%\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, linkcolor=black, urlcolor=red]{hyperref}
 
 \usepackage{amsmath}
 \usepackage{amssymb}
@@ -13,7 +14,7 @@
 
 
 \author{KONDAPALLI VARA PRASAD \\ 22MS161 \\[0.5cm]
-\textbf{Supervisor:} Rajesh Kumble Nayak}
+\textbf{Supervisor:} Prof. Rajesh Kumble Nayak}
 \date{}
 
 
@@ -211,16 +212,18 @@ Maximising $\ln \Lambda(\boldsymbol{\theta})$ (or equivalently $G(\boldsymbol{\t
 Here I have taken a signal and embedded into noise with appropriate ampltude  and the noise is generated 
 from psd of the LIGO Detector and from there I assumed this is my data of time series and checked for any potential siganls 
 by using multiple templates with different mass combinations. The highest SNR gives me the closest template that matched with the signal and correspondingly the closest 
-parameters for the signal are obtained from the best template parameters.
+parameters for the signal are obtained from the best template parameters.Throughout the Analysis my Sampling rate (sps) and Time (T) are constant for each function argument.
 
 \begin{figure}[h]
     \centering
-    \includegraphics[width=0.55\textwidth]{../noise_data.png}%
-    \includegraphics[width=0.55\textwidth]{../snr_analysis.png}
+    \includegraphics[width=0.52\textwidth]{../noise_data.png}%
+    \includegraphics[width=0.52\textwidth]{../snr_analysis.png}
 \end{figure}
 
-I have also did some practical coding to get familiar with the analysis of these gravitaional waves using PyCBC package.
+I have also carried out some practical coding to become familiar with the analysis of gravitational waves using the \texttt{PyCBC} package.
 
+The corresponding Jupyter notebook is available at :
+\href{https://drive.google.com/file/d/1cZhGSJQLC_IejpNyWa35ZB9D6rHQPUxg/view?usp=sharing}{Jupyter notebook}.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
